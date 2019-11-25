@@ -1,5 +1,8 @@
 $(document).ready(function() {
   window.dancers = [];
+  for(var i = 1; i < 5; i++){
+    window.dancers.push(cat(i * 10, 20, 1000));
+  }
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
