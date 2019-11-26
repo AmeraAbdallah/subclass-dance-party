@@ -1,8 +1,8 @@
 $(document).ready(function() {
   window.dancers = [];
-  for(var i = 1; i < 5; i++){
-    window.dancers.push(cat(i * 10, 20, 1000));
-  }
+  // for(var i = 1; i < 5; i++){
+  //   window.dancers.push(cat(i * 10, 20, 1000));
+  // }
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -25,10 +25,10 @@ $(document).ready(function() {
 
     // make a dancer with a random position
 
-    var dancer = dancerMakerFunction(
+    var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
-      Math.random() * 1000
+      3000  
     );
     $('body').append(dancer.$node);
   });

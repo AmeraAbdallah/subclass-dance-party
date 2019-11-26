@@ -1,9 +1,10 @@
 body, html{
   height:100%;
+  font-family:  Arial;
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-color: black;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -15,13 +16,30 @@ body, a:link, a:visited, a:active{
 }
 .topbar{
   height:32px;
-  background-color: #555;
+  background-color: black;
 }
 .title{
   background-color: #777;
 }
 .dancer{
+  color : white;
+  font-size: 35px;
   border:10px solid red;
   border-radius:10px;
   position:absolute;
 }
+.cat{
+   /*-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);*/
+  position:absolute;
+}
+.cat1{
+   -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.fatima{
+  color : white;
+  font-size: 25px;
+  position:absolute;
+}
+
